@@ -15,7 +15,4 @@ Simulates particle movement under gravitational forces using Gravitational Force
 To download and use the project on Centaurus, run:  
 ```bash
 git clone https://github.com/SumJunk/particleSim_Cuda.git
-cd particleSim_Cuda
-git checkout master
-g++ 
 ./nbody <nbpart> <dt> <nbstep> <printevery> <threads>

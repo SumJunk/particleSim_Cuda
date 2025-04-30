@@ -1,5 +1,5 @@
 NVCC = nvcc
-CXXFLAGS = -O3 -arch=sm_75
+CXXFLAGS = -O3 -arch=sm_61
 TARGET = nbody
 SRC = nbody.cu
 

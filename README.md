@@ -8,14 +8,14 @@ Simulates particle movement under gravitational forces using Gravitational Force
 - Random particle generation, calculation of gravitational forces between each pair of particles.
 - Velocity updates based on forces. 
 - Uses GPU acceleration via CUDA 12.4.
-- Compiles with nvcc, nvcc -arch=sm_75 -O2 -o nbody nbody.cu
+- Compiles with nvcc -arch=sm_61, in makefile.
  
  
 # Clone the Repository  
-To download and use the project on Centaurus ensure you are on a computing node, run:  
+To download and use the project on Centaurus, run:  
 ```bash
 git clone https://github.com/SumJunk/particleSim_Cuda.git
 cd particleSim_Cuda
 git checkout master
-g++ -O3 nbody.cpp -o nbody
+g++ 
 ./nbody <nbpart> <dt> <nbstep> <printevery> <threads>
